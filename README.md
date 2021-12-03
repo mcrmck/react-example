@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+In the project directory, run:
+
+### `npm install`
+
+Installs necessary modules.
+
+Then, you must install the following modules:
+
+### `npm install recharts`
+### `npm install @emotion/styled`
+### `npm install @emotion/react`
+### `npm install @mui/material`
+
+After that, you can start the server successfully.
 ## Available Scripts
 
 In the project directory, you can run:
