@@ -53,7 +53,14 @@ export default function OzoneOverSolar({ width }) {
         <React.Fragment>
           <Title>Ozone over Solar</Title>
           <ResponsiveContainer width={width}>
-            <ScatterChart>
+            <ScatterChart
+              margin={{
+                top: 16,
+                right: 16,
+                bottom: 0,
+                left: 24,
+              }}
+            >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis
                 type="number"
