@@ -3,6 +3,7 @@ import OzoneOverSolar from "./plots/OzoneOverSolar";
 import WindTempOverTime from "./plots/WindTempOverTime";
 import React from "react";
 import Histogram from "./plots/Histogram";
+import Boxplot from "./plots/Boxplot";
 
 function Plots() {
   return (
@@ -11,6 +12,7 @@ function Plots() {
       <OzoneOverSolar />
       <WindTempOverTime />
       <Histogram />
+      <Boxplot />
     </React.Fragment>
   );
 }

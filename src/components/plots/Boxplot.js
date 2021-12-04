@@ -29,34 +29,38 @@ function Histogram() {
           height: 510,
         }}
       >
-        <Title>Stacked Histogram</Title>
+        <Title>Box Plot</Title>
         <Plot
           data={[
-            // {
-            //   x: solarData,
-            //   type: "histogram",
-            //   marker: { color: "yellow", opacity: 0.5 },
-            // },
             {
-              x: ozoneData,
+              y: solarData,
+              boxpoints: "all",
+              jitter: 0.3,
+              pointpos: -1.8,
+              type: "box",
+              marker: { color: "orange", opacity: 1.0 },
+              name: "Solar",
+            },
+            {
+              y: ozoneData,
+              boxpoints: "all",
+              jitter: 0.3,
+              pointpos: -1.8,
+              type: "box",
+              marker: { color: "green", opacity: 1.0 },
               name: "Ozone (Dobsons)",
-              type: "histogram",
-              marker: { color: "green", opacity: 0.75 },
             },
             {
-              x: windData,
-              name: "Wind Speed (mph)",
-              type: "histogram",
-              marker: { color: "blue", opacity: 0.75 },
-            },
-            {
-              x: tempData,
+              y: tempData,
+              boxpoints: "all",
+              jitter: 0.3,
+              pointpos: -1.8,
+              type: "box",
+              marker: { color: "red", opacity: 1.0 },
               name: "Temperature (°F)",
-              type: "histogram",
-              marker: { color: "red", opacity: 0.75 },
             },
           ]}
-          layout={{ barmode: "stack" }}
+          layout={{}}
         />
       </Paper>
     </Grid>
