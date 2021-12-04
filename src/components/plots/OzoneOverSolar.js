@@ -13,9 +13,8 @@ import {
 } from "recharts";
 import myData from "../../data/airquality.json";
 import moment from "moment";
-import { Paper } from "@mui/material";
+import { Paper, Grid } from "@mui/material";
 import Title from "../Title";
-import Grid from "@mui/material/Grid";
 
 export default function OzoneOverSolar({ width }) {
   const theme = useTheme();
