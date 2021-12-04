@@ -1,8 +1,7 @@
-import React from "react";
-import Plot from "react-plotly.js";
 import { Paper, Grid } from "@mui/material";
+import Plot from "react-plotly.js";
+import Title from "../elements/Title";
 import myData from "../../data/airquality.json";
-import Title from "../Title";
 
 function Histogram() {
   const myJSON = JSON.stringify(myData);
@@ -32,11 +31,6 @@ function Histogram() {
         <Title>Stacked Histogram</Title>
         <Plot
           data={[
-            // {
-            //   x: solarData,
-            //   type: "histogram",
-            //   marker: { color: "yellow", opacity: 0.5 },
-            // },
             {
               x: ozoneData,
               name: "Ozone (Dobsons)",
